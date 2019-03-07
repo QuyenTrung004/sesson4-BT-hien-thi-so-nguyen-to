@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = Number(prompt("Nhap so can in?", ));
+    let j = 0;
+
+    function checkNT(a){
+        if (a<2){return false;}
+        for (let i=2;i<a;i++){
+            if ((a%i)===0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    for( let n = 0; n < number; ){
+        if (checkNT(j)){
+            document.write(j + ' La so nguyen to' + '<br>');
+            n++;
+        }
+        j++;
+    }
+</script>
+</body>
+</html>
